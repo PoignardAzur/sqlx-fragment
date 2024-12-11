@@ -3,6 +3,8 @@
 
 //! API for pushing formatted chunks of SQL to an SQLX QueryBuilder
 
+mod builder2;
+
 use sqlx::{Database, QueryBuilder};
 
 fn push_fragment<'args, DB: Database>(
